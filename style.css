@@ -42,9 +42,25 @@ button {
     font-size: x-large;
 }
 
+.number-button:hover, .operation-button:hover, .equals-button:hover {
+    width: 20%;
+    height: 90%;
+    margin: 0.2em;
+    font-size: x-large;
+    background-color: #4b0d0d;
+}
+
 .reset-button {
     width: 30%;
     height: 50%;
     margin: 0.2em;
     font-size: x-large;
+}
+
+.reset-button:hover {
+    width: 30%;
+    height: 50%;
+    margin: 0.2em;
+    font-size: x-large;
+    background-color: #4b0d0d;
 }
