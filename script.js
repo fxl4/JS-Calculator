@@ -1,11 +1,29 @@
-import * as mathjs from "https://cdn.skypack.dev/mathjs@11.8.0";
+let chosenNumber1;
+let chosenOperator1;
+let chosenNumber2;
+let chosenOperator2;
+let chosenNumber3;
 
-// get all class=number button buttons and no operators
 
-const elements = document.querySelector('.number-button');
-const calcDisplay = document.getElementByID('calc-display');
+// Element Selectors
+const numberButton = document.querySelector('#frame');
 
-// update id="calc-display"
+// Event Handlers
+const updateCalcDisplay = (event) => {
+    const clickedNumber = event.target.textContent;
+    document.getElementById('calc-display').textContent = clickedNumber;
+    /* WIP
 
-let displayText = '';
-calcDisplay.textContent = displayText;
+    if (event.target.className = "number-button") {
+        const clickedNumber = event.target.textContent;
+        document.getElementById('calc-display').textContent = clickedNumber;
+        chosenNumber1 = clickedNumber;
+    } else if (event.target.className = "operation-button") {
+        
+    }
+    
+    */
+};
+
+// Event Listeners
+numberButton.addEventListener('click', updateCalcDisplay);
